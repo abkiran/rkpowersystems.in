@@ -1,255 +1,270 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RK Power Systems</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <style>
-
-
-* {
-  box-sizing: border-box;
-}
-
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
   padding: 20px;
-  background: #7F8C8D;
+  background: #A2B6E0;
 }
-
-/* Header/Blog Title */
-.header {
-  padding: 5px;
-  font-size: 10px;
-  text-align: left;
-  background: #E67E22;
-}
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 33%;
-}
-
-/* Center column */
-.centercolumn {
-  float: center;
-  width: 33%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: right;
-  width: 33%;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 0px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: #BDC3C7;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .centercolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-#sp-top-bar {
-    background-color: #f2f2f2;
-    color: #999999;
-}
-#sp-top-bar {
-    padding: 0px;
-}
-.container {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.sp-contact-info {
-    float: right;
-    list-style: none;
-    padding: 0;
-    margin: 0 -10px;
-}
-.sp-contact-info li {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #8d8d8d;
-    letter-spacing: 0.5px;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.fa-phone:before {
-    content: "\f095";
-}
-
-
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
 </style>
+<body>
 
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Products</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
 
-<div class="header">
-  
-  <section id="sp-top-bar">
-  <div>
-  
-  <div class="container">
-  <div class="row">
-  <div id="sp-top2" class="col-sm-12 col-md-12">
-  
-  <li class="header">
-  <div>
-  <img src="rk.png" class="fakeimg" style="height:100px;width:100px;">
-  <div>
-  <h style="color:black;font-size: 35px;">RK Power Systems
-  
-  <ul class="sp-contact-info">  
-  
-  
-  <li class="sp-contact-phone">
-  <i class="fa fa-phone"></i> 
-  <a href="tel:+91-9676888735">+91-9676888735</a>
-  </li>
-  
-  <li class="sp-contact-email"><i class="fa fa-envelope"></i> 
-  <a href="mailto:info@electricianpress.com">rkpowersystemsrk@gmail.com</a>
-  </li>
-  
-  </ul>
-  </h>
-  <p style="color:black;font-size: 20px;">Panel Builders optimizing electricity and
-  enhancing productivity</p>
-
-  <p style="color:black;font-size: 15px;">RK Power Systems provides a perfect solution to all your generation needs 
-  with the state of the art control panels which monitor the prodution line efficients and ensuring optimum level 
-  of power consumptions and enhance the produtivity of machineries.</p>
-  
-  </li>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
-  </div>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-xlarge" style="color:black; max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right">
+	<h3>Contact Details</h3>
+	<li >
+	  <i >
+	  </i> 
+	  <a href="tel:+91-9676888735">+91-9676888735</a>
+	  </li>
+	  
+	  <li> 
+	  <a href="mailto:rkpowersystemsrk@gmail.com">rkpowersystemsrk@gmail.com</a>
+	  </li>
+	  </div>
+    <div class="w3-center w3-padding-16"><h1>RK Power Systems</h1></div>	
   </div>
 </div>
-</head>
-<body>
-<div class="row">
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-    <div class="column">
-    <div class="card">
-      <h2>MCC Panel Board</h2>
-      <h5>Distribution of power main incoming and motor control panels.</h5>
-	  <img src="mcc-panel-board-500x500.jpg" class="fakeimg" style="height:500px;">
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="mcc-panel-board-500x500.jpg" alt="Sandwich" style="height:250px;width:100%">
+      <h3>MCC Panel Board</h3>
       <p>We offer MCC Panels that are designed for the distribution of power main incoming and motor control panels. 
 	  these MCC Panels are designed with utmost are and strigent quality inspection to ansure client satisfaction. 
 	  This range is available in standard as well as in customized size.</p>
-      </div>
-    <div class="card">
-      <h2>POWER DISTRIBUTION PANELS</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-	  <img src="power-distribution-panels.jpg" class="fakeimg" style="height:500px;">
+    </div>
+    <div class="w3-quarter">
+      <img src="power-distribution-panels.jpg" alt="Steak" style="height:250px;width:100%">
+      <h3>POWER DISTRIBUTION PANELS</h3>
       <p>Power Distribution panel ensures efficient distribution of both high tension and low tension supply. 
 	  The boards are fabricated in compliance with the norms set by electrical board's regulations and encompass 
 	  optimum quality switches and change overs.</p>
     </div>
-  </div>
- 
-    <div class="column">
-    <div class="card">
-      <h2>POWER CONTROL PANEL</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <img src="power-control-panel-500x500.jpeg" class="fakeimg" style="height:500px;">
+    <div class="w3-quarter">
+      <img src="power-control-panel-500x500.jpeg" alt="Cherries" style="height:250px;width:100%">
+      <h3>POWER CONTROL PANEL</h3>
       <p>Power Control Center Panels provide reliable and effective services for a long time to come and offer 
 	  high controllability and distribution of power. Made from fine quality raw materials PCC Panels are 
 	  ectremely study and we offer then in various sizes at competitive prices.</p>
-      </div>
-	  
-    <div class="card">
-      <h2>DRIVE PANEL</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <img src="drive-panel-500x500.jpg" class="fakeimg" style="height:500px;">
-      <p>
-	  <br>  We offer high quality Automation & Drive Panels which find the application in various industies. 
+    </div>
+    <div class="w3-quarter">
+      <img src="drive-panel-500x500.jpg" alt="Pasta and Wine" style="height:250px;width:100%">
+      <h3>DRIVE PANEL</h3>
+      <p>We offer high quality Automation & Drive Panels which find the application in various industies. 
 	  Rekoned for the sturdy designs, high durability, longer service life, resistivity to corrosion and 
 	  for optimum quality performance.</p>
     </div>
   </div>
   
-
-    <div class="column">
-    <div class="card">
-      <h2>CONTROL PANEL</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <img src="Control_Panel.png" class="fakeimg" style="height:500px;">
-      <p>
-	  <br>  Our control panel boards come integrated with digital redefining control devices such as synchronize 
-	  load sharing controls, and KVAR/Power station controls to ensure world class controls performance.
-	                                                                                 
-	  </p>
-      </div>
-    <div class="card">
-      <h2>FIRE FIGHTING PANELS</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <img src="fire-fighting-panel-500x500.jpg" class="fakeimg" style="height:500px;">
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="Control_Panel.png" alt="Popsicle" style="height:250px;width:100%">
+      <h3>CONTROL PANEL</h3>
+      <p>Our control panel boards come integrated with digital redefining control devices such as synchronize 
+	  load sharing controls, and KVAR/Power station controls to ensure world class controls performance.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="fire-fighting-panel-500x500.jpg" alt="Salmon" style="height:250px;width:100%">
+      <h3>FIRE FIGHTING PANELS</h3>
       <p>Fire fighting panels are extensively used in various industries such as plastic, chemical, 
 	  pharmaceutical and varous refineries. The fire fighting panels are the heart of a fire system
 	  and are designed by using advanced technology known for reliability and durability.</p>
     </div>
+    <div class="w3-quarter">
+      <img src="apfc-panel-500x500.jpg" alt="Sandwich" style="height:250px;width:100%">
+      <h3>APFC PANELS</h3>
+      <p>APFC Panel has microcontroller based programmable controller which switches the capacitor banks
+	  of suitable capacity automatically in multiple stages by directly reading the reactive load(RKVA) 
+	  which works in the principle of VAR sensing tends to maintain the PF to 0.99 Lag.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="plc-panel-board-500x500.jpg" alt="Croissant" style="height:250px;width:100%">
+      <h3>PLC CONTROL PANELS</h3>
+      <p>Programmable Logic Controller are manufactured in tandem with the international quality norms 
+	  and so for the reason highly applauded by the patrons across the region. All these controllers are 
+	  stringently tested on variegated parameters to ensure their flawfessness and then forwarded for 
+	  the final delivery.</p>
+    </div>
   </div>
 
-<div class="footer">
-  <h2>Footer</h2>
-  <p>RK Power Systems</p>
-  <p>Punganur, Chittor, Andhra Pradesh, 517247.</p>
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="cold-storage-plant-automation-500x500.jpg" alt="Popsicle" style="height:250px;width:100%">
+      <h3>COLD STORAGE</h3>
+      <p>Cold storage control panel is developed using best grade quality material and sophisticated technology 
+	  with the help of skilled professionals. The offered control panel is highly well known in the industry for 
+	  it's smooth operation and various specifications.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="refrigeration-control-panel-500x500.jpg" alt="Salmon" style="height:250px;width:100%">
+      <h3>REFRIGERATION PANELS</h3>
+      <p>All our industrial Refrigeration Control Panles are well developed as per the guidelance of experienced 
+	  quality inspectors in sync with international norms, hence assured of flawlessness.
+	  These Panels are widely used in varied industries.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="relay-logic-control-panel-500x500.jpg" alt="Sandwich" style="height:250px;width:100%">
+      <h3>RELAY LOGIC CONTROL PANELS</h3>
+      <p>We offer a high precision range of MCC Panel which has got hign demand owing to it's unmatched quality 
+	  and long service life. These are designed to perfection for the distribution of power, Our range is 
+	  strictlytested on well defined parameters before being delivered at the client's end.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="amf-panel-500x500.jpg" alt="Croissant" style="height:250px;width:100%">
+      <h3>AMF PANELS</h3>
+      <p>AMF Panels that are used for emergency power supply during the main power supply failure. These AMF panels
+	  are used for sutomatic operation of Gen set as it helps to retate staring gear of Gen set after main supply is cut.</p>
+    </div>
+  </div>
+  
+    <!-- Fourth Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="mimic-control-panel-500x500.jpg" alt="Popsicle" style="height:250px;width:100%">
+      <h3>MIMIC</h3>
+      <p>These MCC Panels are disigned with utmost care and stringent quality insepection to ensure client satisfaction. 
+	  This range is available in standard as well as in customized size. Easy to operate, Durable, Adrasion resistant, 
+	  Customizable, Shack proof.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="b-m-s-panel-500x500.jpg" alt="Salmon" style="height:250px;width:100%">
+      <h3>BMS</h3>
+      <p>A Building Management Systems(BMS) is a computer-based control systems installed in buildings that controls 
+	  and monitors the building's mechanical and electrical equipment such as ventitation, lighting. power system, 
+	  fire systems, and security systems.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="LT-switchboards-250x250.jpg" alt="Sandwich" style="height:250px;width:100%">
+      <h3>LT SWITCH BOARDS</h3>
+      <p>LT Panel receives power from generation or trandomer and distributes the same to various electronic devices 
+	  and distribution boards. These panels are used in industries both for internal and external use and therfore, 
+	  they are quite rugged to with stand different climatic conditions.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="mv-panel-board-250x250.jpg" alt="Croissant" style="height:250px;width:100%">
+      <h3>MV PANELS</h3>
+      <p>The Panels offered by us, are Form-IV type of cubical medium voltage up to 3200 A and sub switch board up to 800 A.</p>
+    </div>
+  </div>
+  
+  
+     <!-- Fifth Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="power-panels-250x250.jpg" alt="Popsicle" style="height:250px;width:100%">
+      <h3>POWER PANELS</h3>
+      <p>These are widely used to supply emergency power in case of main power failure. Our range of AMF Panel starts the 
+	  generators automatically when electricity goes off and switches off automatically when electricity comes.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Desk-operating-panel-500x500.jpg" alt="Salmon" style="height:250px;width:100%">
+      <h3>DESK OPERATING PANEL</h3>
+      <p>A complete metal closed control desk contains. Information panel(a panel PC). Indication lamps with LED Devices. 
+	  Acoustic devices, Push buttons and switches. Command-apparatus of the drive and brakes control. The desk is equipped 
+	  with the operator's armchair.
+	</p>
+    </div>    
+  </div>
+  
+  
+  
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Company</h3><br>
+    <img src="rk.png" alt="RK" class="w3-image" style="display:block;margin:auto" width="200" height="200">
+    <div class="w3-padding-32">
+      <h6><i>Panel Builders optimizing electricity and enhancing productivity</i></h6>
+      <p>RK Power Systems provides a perfect solution to all your generation needs 
+  with the state of the art control panels which monitor the prodution line efficients and ensuring optimum level 
+  of power consumptions and enhance the produtivity of machineries.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Address</h3>
+      <p>RK Power Systems</p>
+	  <p>Punganur, Chittor, Andhra Pradesh, 517247.</p>
+    </div>
+
+	<div class="w3-third">
+      <h3>Contact Details</h3>
+      <li class="sp-contact-phone">
+	  <i class="fa fa-phone"></i> 
+	  <a href="tel:+91-9676888735">+91-9676888735</a>
+	  </li>
+	  
+	  <li class="sp-contact-email"><i class="fa fa-envelope"></i> 
+	  <a href="mailto:rkpowersystemsrk@gmail.com">rkpowersystemsrk@gmail.com</a>
+	  </li>
+    </div>
+	
+    <div class="w3-third w3-serif">
+      <h3>Locations</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Andhra Pradesh</span> 
+		<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Telangana</span> 
+		<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Tamil Nadu</span>
+      </p>
+    </div>
+  </footer>
+
+<div>© 2019 RK Power Systems Private Limited</div>
+<!-- End page content -->
 </div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>
